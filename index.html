@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#22272d">
+  <title>Planejamento Financeiro - Meu Patrimônio | Um plano para cada objetivo de vida</title>
+  <meta name="description" content="Planejamento financeiro com um planejador CFP sempre ao seu lado: da coleta à sucessão, organizamos toda a sua vida financeira com método e sem conflito de interesse. Da Meu Patrimônio, consultoria de investimentos credenciada na CVM.">
+  <meta property="og:title" content="Planejamento Financeiro - Meu Patrimônio">
+  <meta property="og:description" content="Um conjunto de estratégias personalizadas para alcançar seus objetivos, dentro da sua realidade. Planejador CFP sempre ao lado.">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon-512.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css?v=24">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <!-- ================= HEADER (padrão da home) ================= -->
+  <header class="site-header" data-header>
+    <div class="header-inner">
+      <a class="brand" href="https://meupatrimonio.com/" aria-label="Meu Patrimônio, início">
+        <img class="brand-owl" src="assets/img/logo-coruja-branca.png" alt="Meu Patrimônio" width="88" height="88" fetchpriority="high">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <div class="nav-item"><a href="https://meupatrimonio.com/quem-somos/">Quem somos</a></div>
+        <div class="nav-item">
+          <button type="button" aria-haspopup="true">O que fazemos
+            <svg class="chev" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="submenu">
+            <a href="https://meupatrimonio.com/vitrine-de-cursos-e-materiais-gratuitos/">Educação Financeira</a>
+            <a href="https://meupatrimonio.com/planejamento/" aria-current="page">Planejamento Financeiro</a>
+            <a href="https://meupatrimonio.com/consultoria-de-investimentos-profissional/">Consultoria de Investimentos</a>
+            <a href="https://meupatrimonio.com/family-office/">Family Office</a>
+            <a href="https://meupatrimonio.com/indicar-e-ganhar-e-muito-facil/">Indique e Ganhe</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <button type="button" aria-haspopup="true">Ecossistema
+            <svg class="chev" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="submenu submenu-eco">
+            <div class="submenu-col">
+              <p class="submenu-label">Para você</p>
+              <a href="https://meupatrimonio.com/blog/">Blog</a>
+              <a href="https://www.youtube.com/@Gabriel_Liberato">Canal no YouTube</a>
+              <a href="https://meupatrimonio.com/glossario-financeiro/">Glossário Financeiro</a>
+              <a href="https://meupatrimonio.com/vitrine-de-cursos-e-materiais-gratuitos/">Materiais Gratuitos</a>
+            </div>
+            <div class="submenu-col">
+              <p class="submenu-label">Para profissionais</p>
+              <a href="https://appmeuplano.com/restrito/login">Meu Plano</a>
+              <a href="https://mphub.meupatrimonio.com/">MP Hub</a>
+              <a href="https://mppro.meupatrimonio.com/">MP Pro</a>
+              <a class="submenu-cta" href="https://meupatrimonio.com/formulario-seja-um-parceiro-mp/">Quero ser parceiro &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item"><a href="https://meupatrimonio.com/parceiros/">Seja um parceiro</a></div>
+      </nav>
+
+      <div class="header-cta">
+        <span class="header-selo">Planejamento</span>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+          <span></span><span></span><span></span><span class="sr-only">Abrir menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu (padrão da home) -->
+  <nav class="mobile-menu" id="mobile-menu" data-mobile-menu aria-label="Navegação mobile">
+    <a href="https://meupatrimonio.com/quem-somos/">Quem somos</a>
+    <div class="mob-group"><span>O que fazemos</span>
+      <div class="mob-sub">
+        <a href="https://meupatrimonio.com/vitrine-de-cursos-e-materiais-gratuitos/">Educação Financeira</a>
+        <a href="https://meupatrimonio.com/planejamento/">Planejamento Financeiro</a>
+        <a href="https://meupatrimonio.com/consultoria-de-investimentos-profissional/">Consultoria de Investimentos</a>
+        <a href="https://meupatrimonio.com/family-office/">Family Office</a>
+        <a href="https://meupatrimonio.com/indicar-e-ganhar-e-muito-facil/">Indique e Ganhe</a>
+      </div>
+    </div>
+    <div class="mob-group"><span>Ecossistema</span>
+      <div class="mob-sub">
+        <a href="https://meupatrimonio.com/blog/">Blog</a>
+        <a href="https://www.youtube.com/@Gabriel_Liberato">Canal no YouTube</a>
+        <a href="https://meupatrimonio.com/glossario-financeiro/">Glossário Financeiro</a>
+        <a href="https://meupatrimonio.com/vitrine-de-cursos-e-materiais-gratuitos/">Materiais Gratuitos</a>
+        <a href="https://appmeuplano.com/restrito/login">Meu Plano</a>
+        <a href="https://mphub.meupatrimonio.com/">MP Hub</a>
+        <a href="https://mppro.meupatrimonio.com/">MP Pro</a>
+      </div>
+    </div>
+    <a href="https://meupatrimonio.com/parceiros/">Seja um parceiro</a>
+    <a class="btn btn-primary" href="https://wa.me/5513981191955?text=Ol%C3%A1%2C+vim+do+site+e+quero+falar+sobre+planejamento+financeiro%21" target="_blank" rel="noopener">Fale com um Consultor</a>
+  </nav>
+
+  <main id="conteudo">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="topo">
+      <div class="shell hero-inner">
+        <div class="hero-words reveal">
+          <span>Organizar.</span>
+          <span class="green">Cuidar.</span>
+          <span>Realizar.</span>
+        </div>
+        <div class="hero-rule reveal"></div>
+        <div class="hero-meta reveal">
+          <span class="hero-cvm">Planejamento financeiro com um planejador sempre ao seu lado</span>
+          <a class="btn btn-primary hero-btn" href="https://wa.me/5513981191955?text=Ol%C3%A1%2C+vim+do+site+e+quero+falar+sobre+planejamento+financeiro%21" target="_blank" rel="noopener">Fale com um Consultor</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DOR ================= -->
+    <section class="pain section" id="dor">
+      <div class="shell">
+        <div class="pain-head reveal">
+          <p class="kicker">O problema</p>
+          <h2>Você ganha bem, mas o dinheiro <span class="mark">nunca sobra como deveria.</span></h2>
+          <p class="lead">A vida financeira roda no automático: contas, investimentos soltos, decisões tomadas na pressa. Sem um plano que conecte tudo, cada objetivo importante fica sempre para depois.</p>
+        </div>
+        <ul class="pain-grid reveal">
+          <li class="pain-card">
+            <span class="pain-ico"><i class="bi bi-signpost-split"></i></span>
+            <h3>Objetivos sem estratégia</h3>
+            <p>Aposentadoria, imóvel, viagem: metas grandes que nunca saem do lugar por falta de um caminho definido.</p>
+          </li>
+          <li class="pain-card">
+            <span class="pain-ico"><i class="bi bi-graph-down-arrow"></i></span>
+            <h3>Dinheiro que escapa</h3>
+            <p>Sem controle de orçamento, o que entra some antes de virar patrimônio. E ninguém sabe exatamente para onde foi.</p>
+          </li>
+          <li class="pain-card">
+            <span class="pain-ico"><i class="bi bi-shield-exclamation"></i></span>
+            <h3>Nenhuma proteção montada</h3>
+            <p>Seguros, previdência e sucessão ficam para "um dia". Enquanto isso, o que você construiu segue exposto.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= A NOSSA SOLUÇÃO ================= -->
+    <section class="ps section" id="solucao">
+      <div class="ps-orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="shell">
+        <div class="ps-head reveal">
+          <p class="kicker kicker-light">A nossa solução</p>
+          <h2>Um plano feito para a sua realidade, <span class="mark">com prazos e estratégia.</span></h2>
+          <p class="ps-lead">Planejamento financeiro é um conjunto de estratégias personalizadas para alcançar seus objetivos com prazos definidos, dentro da sua realidade. Não é um relatório que fica na gaveta: é um planejador ao seu lado, ajustando a rota conforme a vida acontece. Como somos remunerados por uma taxa fixa e não por comissão de produto, o plano existe para os seus objetivos, não para uma prateleira.</p>
+        </div>
+        <div class="ps-pillars reveal">
+          <article class="ps-pillar">
+            <span class="ps-pillar-ico"><i class="bi bi-diagram-3"></i></span>
+            <h3>Personalizado</h3>
+            <p>Cada objetivo ganha uma estratégia própria, no seu prazo e dentro do que cabe no seu orçamento.</p>
+          </article>
+          <article class="ps-pillar">
+            <span class="ps-pillar-ico"><i class="bi bi-person-check"></i></span>
+            <h3>Planejador sempre ao lado</h3>
+            <p>Acompanhamento contínuo com um profissional certificado, não um atendimento pontual que acaba na primeira reunião.</p>
+          </article>
+          <article class="ps-pillar">
+            <span class="ps-pillar-ico"><i class="bi bi-eye"></i></span>
+            <h3>Sem conflito de interesse</h3>
+            <p>Não vivemos de comissão de produto. A recomendação nasce do seu objetivo, não da venda.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AUTORIDADE (experiência + números) ================= -->
+    <section class="authority section" id="autoridade">
+      <div class="shell">
+        <div class="authority-inner">
+          <div class="authority-copy reveal">
+            <p class="kicker">Nossa experiência</p>
+            <h2>Entre as maiores empresas de <span class="mark">planejamento financeiro do Brasil.</span></h2>
+            <p class="lead">Metodologia desenvolvida desde 2010, com base em todos os módulos da certificação CFP (Certified Financial Planner). Nossos planejadores seguem um padrão de excelência reconhecido pelos clientes, com NPS 95 de satisfação.</p>
+            <ul class="authority-pills">
+              <li><i class="bi bi-patch-check"></i> Planejadores CFP</li>
+              <li><i class="bi bi-award"></i> Metodologia desde 2010</li>
+              <li><i class="bi bi-shield-check"></i> Credenciada na CVM</li>
+            </ul>
+          </div>
+          <div class="authority-aside reveal">
+            <blockquote class="authority-quote">
+              <img class="authority-seal-img" src="assets/img/selo-confiavel.png" alt="Selo Consultoria de Investimentos Mais Confiável do Brasil" width="120" height="123" loading="lazy" decoding="async">
+              <p>Consultoria de Investimentos Mais Confiável do Brasil.</p>
+              <span>O nosso compromisso é com os seus objetivos de vida, não com a prateleira de produtos.</span>
+            </blockquote>
+            <p class="authority-said"><i class="bi bi-quote" aria-hidden="true"></i>Seu patrimônio não é só um número. Ele é a conexão entre você e seus objetivos de vida.<em>Meu Patrimônio</em></p>
+          </div>
+        </div>
+
+        <div class="stats-row reveal">
+          <div class="stat">
+            <div class="num"><span class="pre">+ R$</span><span data-count="1">1</span> <span class="unit">bi</span></div>
+            <p class="cap">de patrimônio aos nossos cuidados</p>
+          </div>
+          <div class="stat">
+            <div class="num"><span class="pre">+</span><span data-count="500">500</span></div>
+            <p class="cap">famílias atendidas em todo o Brasil</p>
+          </div>
+          <div class="stat">
+            <div class="num"><span class="pre">NPS</span> <span data-count="95">95</span></div>
+            <p class="cap">de satisfação entre nossos clientes</p>
+          </div>
+          <div class="stat">
+            <div class="num"><span class="pre">+</span><span data-count="336">336</span> <span class="unit">mil</span></div>
+            <p class="cap">pessoas impactadas em nossas redes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COMO FUNCIONA: a escada do planejamento ================= -->
+    <section class="steps section" id="como-funciona">
+      <div class="shell">
+        <div class="steps-head reveal">
+          <p class="kicker">Como funciona</p>
+          <h2>Da coleta à sucessão, <span class="mark">um passo de cada vez.</span></h2>
+          <p class="lead">O planejamento nunca acaba: é um processo contínuo em que o planejador percorre cada frente da sua vida financeira ao seu lado, na ordem que faz sentido para o seu momento.</p>
+        </div>
+        <div class="stair-wrap reveal">
+          <span class="stair-flag stair-flag-start"><i class="bi bi-person-arms-up"></i> Planejador sempre ao lado</span>
+          <span class="stair-flag stair-flag-end">O planejamento nunca acaba <i class="bi bi-infinity"></i></span>
+          <ol class="stair">
+            <li class="stair-step">
+              <div class="stair-cap"><span class="stair-ico"><i class="bi bi-clipboard-data"></i></span><strong>Coleta</strong></div>
+              <div class="stair-riser"></div>
+            </li>
+            <li class="stair-step">
+              <div class="stair-cap"><span class="stair-ico"><i class="bi bi-map"></i></span><strong>Plano</strong></div>
+              <div class="stair-riser"></div>
+            </li>
+            <li class="stair-step">
+              <div class="stair-cap"><span class="stair-ico"><i class="bi bi-bullseye"></i></span><strong>Objetivos</strong></div>
+              <div class="stair-riser"></div>
+            </li>
+            <li class="stair-step">
+              <div class="stair-cap"><span class="stair-ico"><i class="bi bi-wallet2"></i></span><strong>Orçamento</strong></div>
+              <div class="stair-riser"></div>
+            </li>
+            <li class="stair-step">
+              <div class="stair-cap"><span class="stair-ico"><i class="bi bi-bar-chart-line"></i></span><strong>Investimentos</strong></div>
+              <div class="stair-riser"></div>
+            </li>
+            <li class="stair-step">
+              <div class="stair-cap"><span class="stair-ico"><i class="bi bi-piggy-bank"></i></span><strong>Previdência</strong></div>
+              <div class="stair-riser"></div>
+            </li>
+            <li class="stair-step">
+              <div class="stair-cap"><span class="stair-ico"><i class="bi bi-shield-check"></i></span><strong>Seguros</strong></div>
+              <div class="stair-riser"></div>
+            </li>
+            <li class="stair-step">
+              <div class="stair-cap"><span class="stair-ico"><i class="bi bi-diagram-2"></i></span><strong>Sucessão</strong></div>
+              <div class="stair-riser"></div>
+            </li>
+          </ol>
+        </div>
+        <p class="steps-note reveal"><i class="bi bi-arrow-repeat"></i> Cada degrau no seu tempo, na ordem que faz sentido para o seu momento. O planejamento é um processo contínuo.</p>
+      </div>
+    </section>
+
+    <!-- ================= MÓDULOS ================= -->
+    <section class="mods section" id="modulos">
+      <div class="shell">
+        <div class="mods-head reveal">
+          <p class="kicker">O que acompanhamos</p>
+          <h2>Toda a sua vida financeira, <span class="mark">em um só plano.</span></h2>
+          <p class="lead">O planejamento cobre cada frente do seu patrimônio, de forma integrada. Você pode começar por um módulo específico ou organizar tudo de uma vez.</p>
+        </div>
+        <ul class="mods-grid reveal">
+          <li class="mod-tile"><span class="mod-ico"><i class="bi bi-heart-pulse"></i></span><span>Check-up</span></li>
+          <li class="mod-tile"><span class="mod-ico"><i class="bi bi-person-vcard"></i></span><span>Perfil</span></li>
+          <li class="mod-tile"><span class="mod-ico"><i class="bi bi-wallet2"></i></span><span>Orçamento</span></li>
+          <li class="mod-tile"><span class="mod-ico"><i class="bi bi-clipboard-data"></i></span><span>Balanço</span></li>
+          <li class="mod-tile"><span class="mod-ico"><i class="bi bi-cash-stack"></i></span><span>Investimentos</span></li>
+          <li class="mod-tile"><span class="mod-ico"><i class="bi bi-piggy-bank"></i></span><span>Previdência</span></li>
+          <li class="mod-tile"><span class="mod-ico"><i class="bi bi-umbrella"></i></span><span>Seguros</span></li>
+          <li class="mod-tile"><span class="mod-ico"><i class="bi bi-bullseye"></i></span><span>Objetivos</span></li>
+          <li class="mod-tile"><span class="mod-ico"><i class="bi bi-diagram-2"></i></span><span>Sucessão</span></li>
+          <li class="mod-tile"><span class="mod-ico"><i class="bi bi-graph-up-arrow"></i></span><span>Monitoria</span></li>
+          <li class="mod-tile"><span class="mod-ico"><i class="bi bi-flag"></i></span><span>Trilha</span></li>
+          <li class="mod-tile"><span class="mod-ico"><i class="bi bi-file-earmark-bar-graph"></i></span><span>Relatórios</span></li>
+          <li class="mod-tile"><span class="mod-ico"><i class="bi bi-cloud"></i></span><span>Drive</span></li>
+          <li class="mod-tile"><span class="mod-ico"><i class="bi bi-calculator"></i></span><span>Ferramentas</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= APP MEU PLANO ================= -->
+    <section class="app section" id="meu-plano">
+      <div class="shell app-inner">
+        <div class="app-copy reveal">
+          <img class="app-logo" src="assets/img/logo-meuplano.svg" alt="Meu Plano, by Meu Patrimônio" width="150" height="86" loading="lazy" decoding="async">
+          <h2>Todo o seu patrimônio <span class="mark">em um só lugar.</span></h2>
+          <p class="lead">Com o Meu Plano, você acompanha orçamento, investimentos e imóveis em uma única tela. Via Open Finance, sua vida financeira fica organizada e sempre atualizada, entre uma reunião e outra com o seu planejador.</p>
+          <div class="app-openfinance">
+            <span>Sistema integrado ao</span>
+            <img src="assets/img/logo-openfinance.png" alt="Open Finance" width="130" height="21" loading="lazy" decoding="async">
+          </div>
+          <div class="app-actions">
+            <a class="btn btn-primary" href="https://appmeuplano.com/restrito/login" target="_blank" rel="noopener">Acessar o Meu Plano</a>
+          </div>
+        </div>
+        <div class="app-visual reveal">
+          <div class="app-stage app-phone-stage">
+            <span class="app-badge">Aplicativo exclusivo</span>
+            <img class="app-mockup" src="assets/img/app-mockup.png?v=1" alt="Aplicativo Meu Plano: tela de resumo com orçamento, balanço e planejador financeiro" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PLANOS (sem preço) ================= -->
+    <section class="steps section" id="planos" style="background:var(--paper)">
+      <div class="shell">
+        <div class="steps-head reveal">
+          <p class="kicker">Como acompanhamos</p>
+          <h2>Um formato de plano para <span class="mark">cada momento de vida.</span></h2>
+          <p class="lead">Do plano pontual para uma decisão específica ao acompanhamento contínuo de toda a vida financeira, existe um caminho que cabe no seu momento. O consultor apresenta o formato ideal na conversa.</p>
+        </div>
+        <ol class="steps-grid reveal" style="grid-template-columns:repeat(4,1fr)">
+          <li class="step-card" style="counter-reset:none">
+            <span class="step-ico"><i class="bi bi-lightning-charge"></i></span>
+            <h3>Fast Plan</h3>
+            <p>Um plano rápido e pontual para organizar o essencial e sair do lugar com um caminho claro.</p>
+          </li>
+          <li class="step-card">
+            <span class="step-ico"><i class="bi bi-grid-1x2"></i></span>
+            <h3>Modular</h3>
+            <p>A análise aprofundada de um módulo específico: orçamento, investimentos, previdência ou outro.</p>
+          </li>
+          <li class="step-card">
+            <span class="step-ico"><i class="bi bi-collection"></i></span>
+            <h3>Total Plan</h3>
+            <p>Toda a vida financeira organizada de ponta a ponta, com o plano completo em todos os módulos.</p>
+          </li>
+          <li class="step-card">
+            <span class="step-ico"><i class="bi bi-arrow-repeat"></i></span>
+            <h3>Acompanhamento Contínuo</h3>
+            <p>Reuniões periódicas de monitoria, app Meu Plano e o planejador sempre ao lado ajustando a rota.</p>
+          </li>
+        </ol>
+        <p class="plans-note reveal"><i class="bi bi-chat-dots"></i> Sem custo para a primeira conversa. O consultor apresenta o formato e o investimento ideais para o seu caso.</p>
+      </div>
+    </section>
+
+    <!-- ================= DEPOIMENTO ================= -->
+    <section class="testi section" id="depoimento">
+      <div class="shell">
+        <div class="testi-head reveal">
+          <p class="kicker">Nossa relação é pautada pela confiança</p>
+          <h2>Quem já <span class="mark">planeja com a gente.</span></h2>
+        </div>
+        <ul class="testi-grid testi-grid-3 reveal">
+          <li><figure class="testi">
+            <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+            <blockquote>Empresa que tem o compromisso com o cliente, o que gera confiança. Isso pra mim é fundamental.</blockquote>
+            <figcaption class="testi-foot">
+              <span class="ava">JC</span>
+              <span>
+                <strong>Juliana Celin</strong>
+                <span>Médica, Belo Horizonte-MG</span>
+              </span>
+            </figcaption>
+          </figure></li>
+          <li><figure class="testi">
+            <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+            <blockquote>A cada dia tenho mais certeza de ter escolhido o parceiro correto para alcançar os meus objetivos.</blockquote>
+            <figcaption class="testi-foot">
+              <span class="ava">GS</span>
+              <span>
+                <strong>Gustavo Salgado</strong>
+                <span>Engenheiro, Curitiba-PR</span>
+              </span>
+            </figcaption>
+          </figure></li>
+          <li><figure class="testi">
+            <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+            <blockquote>Tenho certeza que a Meu Patrimônio fará a gestão impecável, aprimorando conhecimento e implementando com lisura o investimento estratégico traçado com toda a atenção.</blockquote>
+            <figcaption class="testi-foot">
+              <span class="ava">AB</span>
+              <span>
+                <strong>Ademir Benedito</strong>
+                <span>Empresário, Ribeirão Preto-SP</span>
+              </span>
+            </figcaption>
+          </figure></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= FAQ (mantido da página antiga) ================= -->
+    <section class="faq section" id="faq">
+      <div class="shell faq-layout">
+        <div class="faq-head reveal">
+          <p class="kicker">Perguntas frequentes</p>
+          <h2>Ainda com <span class="mark">dúvidas?</span></h2>
+          <p class="lead">O básico sobre como funciona o planejamento financeiro.</p>
+        </div>
+
+        <ul class="faq-list reveal">
+          <li class="faq-item">
+            <button type="button" class="faq-q" aria-expanded="false">Como funciona o planejamento financeiro?<i class="bi bi-plus-lg" aria-hidden="true"></i></button>
+            <div class="faq-a"><p>É uma consultoria individualizada, ideal para organizar toda a vida financeira, contando com um planejador sempre ao seu lado. Definimos a estratégia certa para o uso dos seus recursos, com prazos, e acompanhamos a execução ao longo do tempo.</p></div>
+          </li>
+          <li class="faq-item">
+            <button type="button" class="faq-q" aria-expanded="false">O que é o planejamento financeiro?<i class="bi bi-plus-lg" aria-hidden="true"></i></button>
+            <div class="faq-a"><p>Seu patrimônio não é só um número: ele é a conexão entre você e seus objetivos de vida. O planejamento financeiro existe para definir a estratégia ideal de uso dos seus recursos e apoiar sempre as melhores decisões, viabilizando projetos com o uso eficiente do que você tem disponível.</p></div>
+          </li>
+          <li class="faq-item">
+            <button type="button" class="faq-q" aria-expanded="false">Qual o preço do planejamento financeiro?<i class="bi bi-plus-lg" aria-hidden="true"></i></button>
+            <div class="faq-a"><p>Existem formatos diferentes, do plano pontual ao acompanhamento contínuo. Fale com um consultor pelo WhatsApp ou por e-mail (<a href="mailto:atendimento@meupatrimonio.com">atendimento@meupatrimonio.com</a>) e apresentamos os planos disponíveis, com o investimento ideal para o seu caso.</p></div>
+          </li>
+          <li class="faq-item">
+            <button type="button" class="faq-q" aria-expanded="false">Quem será o meu planejador financeiro?<i class="bi bi-plus-lg" aria-hidden="true"></i></button>
+            <div class="faq-a"><p>Contamos com planejadores altamente qualificados, que seguem nossa metodologia de excelência (NPS 95), desenvolvida desde 2010 com base em todos os módulos da certificação CFP (Certified Financial Planner).</p></div>
+          </li>
+          <li class="faq-item">
+            <button type="button" class="faq-q" aria-expanded="false">Como funciona a confidencialidade dos meus dados?<i class="bi bi-plus-lg" aria-hidden="true"></i></button>
+            <div class="faq-a"><p>A Meu Patrimônio tem o compromisso de zelar pelas informações dos clientes, com medidas que garantem proteção, privacidade, integridade e confidencialidade dos dados pessoais tratados. Adotamos criptografia ou anonimização de informações sensíveis e exigimos que nossos fornecedores protejam esses dados contra acesso não autorizado. Saiba mais na <a href="https://meupatrimonio.com/politica-de-privacidade/">Política de Privacidade</a>.</p></div>
+          </li>
+          <li class="faq-item">
+            <button type="button" class="faq-q" aria-expanded="false">A Meu Patrimônio é uma corretora?<i class="bi bi-plus-lg" aria-hidden="true"></i></button>
+            <div class="faq-a"><p>Não. Somos uma Consultoria de Investimentos autorizada pela CVM. Não recebemos comissões pela venda de produtos, o que nos isenta de conflitos de interesse. Nossa remuneração vem exclusivamente do serviço prestado ao cliente.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= CTA FINAL: FALE COM UM CONSULTOR + MAPA ================= -->
+    <section class="close section" id="agendar">
+      <div class="shell close-inner">
+        <div class="close-copy reveal">
+          <p class="kicker">O próximo passo</p>
+          <h2 class="close-title"><span class="ct-l1">A construção de um futuro melhor</span><br><span class="mark">começa hoje.</span></h2>
+          <p class="lead">Sem compromisso e sem oferta de produto. Converse com um consultor e descubra o plano ideal para conquistar a qualidade de vida que você merece.</p>
+          <div class="close-actions">
+            <a class="btn btn-primary" href="https://wa.me/5513981191955?text=Ol%C3%A1%2C+vim+do+site+e+quero+falar+sobre+planejamento+financeiro%21" target="_blank" rel="noopener">Fale com um Consultor</a>
+            <a class="btn btn-ghost" href="https://meupatrimonio.com/checkup/" target="_blank" rel="noopener">Fazer um diagnóstico</a>
+          </div>
+        </div>
+        <div class="reach-map reveal">
+          <div class="reach-svg" data-br-map></div>
+          <div class="reach-tip" data-map-tip hidden></div>
+          <div class="reach-legend">
+            <span class="lg lg-sede"><i></i> Sede</span>
+            <span class="lg lg-esc"><i></i> Escritórios</span>
+            <span class="lg lg-con"><i></i> Consultores</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER (padrão da home) ================= -->
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="https://meupatrimonio.com/"><img class="brand-owl" src="assets/img/logo-coruja-branca.png" alt="Meu Patrimônio"></a>
+          <p>Planejamento financeiro e consultoria de investimentos credenciada na CVM.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/meupatrimoniopf" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/meupatrimonio.nacional/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@Gabriel_Liberato" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Quem Somos</h5>
+          <a href="https://meupatrimonio.com/quem-somos/">Quem somos</a>
+          <a href="https://meupatrimonio.com/quem-somos/">Nossos valores</a>
+          <a href="https://meupatrimonio.com/quem-somos/">Nosso time</a>
+          <a href="https://rede.meupatrimonio.com/">Rede Meu Patrimônio</a>
+        </div>
+        <div class="footer-col">
+          <h5>O Que Fazemos</h5>
+          <a href="https://meupatrimonio.com/vitrine-de-cursos-e-materiais-gratuitos/">Educação Financeira</a>
+          <a href="https://meupatrimonio.com/planejamento/">Planejamento Financeiro</a>
+          <a href="https://meupatrimonio.com/consultoria-de-investimentos-profissional/">Consultoria de Investimentos</a>
+          <a href="https://meupatrimonio.com/family-office/">Family Office</a>
+          <a href="https://meupatrimonio.com/indicar-e-ganhar-e-muito-facil/">Indique e Ganhe</a>
+        </div>
+        <div class="footer-col">
+          <h5>Ecossistema</h5>
+          <a href="https://meupatrimonio.com/blog/">Blog</a>
+          <a href="https://www.youtube.com/@Gabriel_Liberato">YouTube</a>
+          <a href="https://meupatrimonio.com/glossario-financeiro/">Glossário Financeiro</a>
+          <a href="https://meupatrimonio.com/vitrine-de-cursos-e-materiais-gratuitos/">Materiais Gratuitos</a>
+          <a href="https://appmeuplano.com/restrito/login">Meu Plano</a>
+        </div>
+        <div class="footer-col">
+          <h5>Seja um Parceiro</h5>
+          <a href="https://meupatrimonio.com/parceiros/">Seja um consultor</a>
+          <a href="https://rede.meupatrimonio.com/">Escritório parceiro</a>
+          <a href="https://meupatrimonio.com/formulario-seja-um-parceiro-mp/">Quero ser parceiro</a>
+        </div>
+      </div>
+      <div class="footer-addr">
+        <div class="addr">
+          <p class="addr-city"><i class="bi bi-geo-alt-fill"></i> Vitória, ES <span class="addr-tag">Sede</span></p>
+          <p>Av. Nossa Sra. dos Navegantes, 451, Sl 605, Enseada do Suá, Vitória, ES, 29050-335</p>
+        </div>
+        <div class="addr">
+          <p class="addr-city"><i class="bi bi-geo-alt-fill"></i> Santos, SP</p>
+          <p>Av. Conselheiro Nébias, 754, Sala 1322, Boqueirão, Santos, SP, 11045-002, Edifício Helbor Vila Rica</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Meu Patrimônio. Todos os direitos reservados.</span>
+        <span class="legal">
+          <a href="https://meupatrimonio.com/termos-de-uso/">Termos de uso</a>
+          <a href="https://meupatrimonio.com/politica-de-privacidade/">Política de privacidade</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a class="wa-float" href="https://wa.me/5513981191955?text=Ol%C3%A1%2C+vim+do+site+e+quero+falar+sobre+planejamento+financeiro%21" target="_blank" rel="noopener" aria-label="Converse com o nosso time no WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.5-.5c.1-.2.2-.3.2-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 .9-1 2.3 0 1.3 1 2.6 1.1 2.8.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.5-.3zM12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2z"/></svg>
+  </a>
+
+  <script src="app.js?v=24" defer></script>
+</body>
+</html>
