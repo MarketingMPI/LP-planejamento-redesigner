@@ -1259,6 +1259,15 @@ p{margin:0}
 .step-ico{display:grid;place-items:center;width:46px;height:46px;border-radius:12px;background:var(--ink);color:#fff;font-size:22px;margin-bottom:16px}
 .step-card h3{font-size:18px;font-weight:600;color:var(--ink);letter-spacing:-.02em;line-height:1.14}
 .step-card p{margin-top:9px;font-size:13.5px;color:var(--slate);line-height:1.55}
+/* Card destacado do plano preferido (Total Plan) */
+.step-card-featured{background:linear-gradient(160deg,var(--forest),var(--deep));border-color:transparent}
+.step-card-featured::before{content:none}
+.step-card-featured .step-ico{background:#fff;color:var(--ink)}
+.step-card-featured h3{color:#fff}
+.step-card-featured p{color:color-mix(in oklch,#fff 82%,transparent)}
+.step-flag{position:absolute;top:14px;right:14px;z-index:1;font-size:10px;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--ink);background:#fff;
+  padding:5px 10px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.18)}
 .steps-note{margin-top:clamp(26px,3vw,38px);display:inline-flex;align-items:center;gap:10px;
   font-size:14px;font-weight:600;color:var(--ink)}
 .steps-note i{font-size:20px;color:var(--signal)}
