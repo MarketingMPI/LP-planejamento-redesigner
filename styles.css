@@ -507,6 +507,20 @@ p{margin:0}
 .ps-head .mark{color:var(--mint)}
 .ps-head .mark::before{background:color-mix(in oklch,var(--mint) 30%,transparent)}
 .ps-lead{margin-top:20px;font-size:clamp(16px,1.5vw,19px);line-height:1.6;color:color-mix(in oklch,#fff 80%,transparent);max-width:66ch}
+.method-seal{display:inline-flex;align-items:center;gap:18px;margin-top:28px;
+  padding:16px 24px 16px 20px;border-radius:14px;
+  background:color-mix(in oklch,#fff 8%,transparent);
+  border:1px solid color-mix(in oklch,#fff 18%,transparent);
+  backdrop-filter:blur(6px)}
+.method-seal-num{flex:none;font-size:13px;font-weight:700;letter-spacing:.1em;
+  color:var(--mint);padding-right:16px;border-right:1px solid color-mix(in oklch,#fff 20%,transparent)}
+.method-seal-body{display:flex;flex-direction:column;gap:3px}
+.method-seal-body strong{font-size:14px;font-weight:700;letter-spacing:.14em;
+  text-transform:uppercase;color:#fff}
+.method-seal-body span{font-size:14px;line-height:1.45;color:color-mix(in oklch,#fff 72%,transparent)}
+@media (max-width:520px){
+  .method-seal{width:100%}
+}
 .ps-pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .ps-pillar{position:relative;border-radius:24px;padding:clamp(28px,2.8vw,38px);
   background:linear-gradient(155deg,color-mix(in oklch,#fff 12%,transparent),color-mix(in oklch,#fff 3%,transparent));
