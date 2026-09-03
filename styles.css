@@ -1412,3 +1412,29 @@ p{margin:0}
   .app-chip{left:12px;bottom:14px}
   .app-badge{top:14px;left:14px}
 }
+
+/* ---- Vídeo do Meu Plano (facade: thumb + play, carrega iframe ao clicar) ---- */
+.app-video{margin:clamp(40px,5vw,64px) 0 0;padding:0}
+.app-video-btn{display:block;position:relative;width:100%;aspect-ratio:16/9;
+  border:0;padding:0;cursor:pointer;border-radius:var(--r-product);overflow:hidden;
+  background:var(--deep);box-shadow:0 30px 66px color-mix(in oklab,var(--ink) 22%,transparent)}
+.app-video-btn img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  transition:transform .5s var(--ease),filter .3s var(--ease)}
+.app-video-btn::after{content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at center,transparent 40%,color-mix(in oklab,var(--deep) 42%,transparent) 100%);
+  transition:opacity .3s var(--ease)}
+.app-video-btn:hover img{transform:scale(1.03)}
+.app-video-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:1;
+  width:clamp(64px,7vw,84px);height:clamp(64px,7vw,84px);border-radius:50%;
+  display:grid;place-items:center;color:#fff;background:color-mix(in oklab,var(--ink) 72%,transparent);
+  backdrop-filter:blur(4px);border:1.5px solid color-mix(in oklch,#fff 55%,transparent);
+  box-shadow:0 14px 34px rgba(0,0,0,.32);transition:transform .3s var(--ease),background .3s var(--ease)}
+.app-video-play i{font-size:clamp(30px,3.4vw,42px);margin-left:4px;line-height:1}
+.app-video-btn:hover .app-video-play{transform:translate(-50%,-50%) scale(1.08);background:var(--ink)}
+.app-video figcaption{margin-top:16px;display:flex;align-items:center;justify-content:center;gap:9px;
+  font-size:13.5px;font-weight:600;letter-spacing:.02em;color:var(--slate)}
+.app-video figcaption i{font-size:18px;color:var(--forest)}
+/* quando o iframe entra no lugar */
+.app-video-embed{position:relative;width:100%;aspect-ratio:16/9;border-radius:var(--r-product);
+  overflow:hidden;box-shadow:0 30px 66px color-mix(in oklab,var(--ink) 22%,transparent)}
+.app-video-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}

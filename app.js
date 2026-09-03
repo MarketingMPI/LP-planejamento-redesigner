@@ -423,3 +423,22 @@ qsa('[data-carousel]').forEach(viewport => {
     tick();   // roda sempre; `paused` decide se avança (respeita reduced-motion)
   });
 });
+
+/* ---------- Vídeo facade: troca a thumb pelo iframe do YouTube ao clicar ---------- */
+(function () {
+  const btn = document.querySelector('.app-video-btn');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    const id = btn.getAttribute('data-yt');
+    if (!id) return;
+    const wrap = document.createElement('div');
+    wrap.className = 'app-video-embed';
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`;
+    iframe.title = 'Vídeo do aplicativo Meu Plano';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.setAttribute('allowfullscreen', '');
+    wrap.appendChild(iframe);
+    btn.replaceWith(wrap);
+  }, { once: true });
+})();
