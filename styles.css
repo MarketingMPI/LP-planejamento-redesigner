@@ -1294,9 +1294,18 @@ p{margin:0}
 .stair-riser{position:relative;background:var(--mist);
   border:1px solid var(--line);border-bottom:0;
   border-radius:8px 8px 0 0;transition:background .3s var(--ease)}
+/* degradê de cinzas: mais claro na base, mais escuro no topo */
+.stair-step:nth-child(1) .stair-riser{background:color-mix(in oklab,var(--forest) 5%,var(--paper))}
+.stair-step:nth-child(2) .stair-riser{background:color-mix(in oklab,var(--forest) 11%,var(--paper))}
+.stair-step:nth-child(3) .stair-riser{background:color-mix(in oklab,var(--forest) 18%,var(--paper))}
+.stair-step:nth-child(4) .stair-riser{background:color-mix(in oklab,var(--forest) 26%,var(--paper))}
+.stair-step:nth-child(5) .stair-riser{background:color-mix(in oklab,var(--forest) 36%,var(--paper))}
+.stair-step:nth-child(6) .stair-riser{background:color-mix(in oklab,var(--forest) 48%,var(--paper))}
+.stair-step:nth-child(7) .stair-riser{background:color-mix(in oklab,var(--forest) 62%,var(--paper))}
+.stair-step:nth-child(8) .stair-riser{background:color-mix(in oklab,var(--forest) 78%,var(--paper))}
 .stair-riser::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;
-  border-radius:8px 8px 0 0;background:var(--forest);opacity:.85;transition:opacity .3s var(--ease)}
-.stair-step:hover .stair-riser{background:color-mix(in oklab,var(--forest) 8%,var(--mist))}
+  border-radius:8px 8px 0 0;background:var(--deep);opacity:.75;transition:opacity .3s var(--ease)}
+.stair-step:hover .stair-riser{filter:brightness(.96)}
 .stair-step:hover .stair-riser::before{opacity:1}
 .stair-cap{display:flex;flex-direction:column;align-items:center;gap:10px;padding:0 6px 16px;text-align:center}
 .stair-ico{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;
