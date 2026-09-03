@@ -1274,32 +1274,37 @@ p{margin:0}
 
 /* ---- Escada visual: sobe degrau a degrau (estilo da apresentação) ---- */
 .stair-wrap{position:relative;margin-top:clamp(20px,3vw,40px);padding-top:44px}
-.stair-flag{position:absolute;top:0;display:inline-flex;align-items:center;gap:8px;
-  font-size:13px;font-weight:700;letter-spacing:-.01em;color:var(--ink)}
-.stair-flag i{font-size:17px;color:var(--forest)}
+.stair-flag{position:absolute;top:0;display:inline-flex;align-items:center;gap:7px;
+  font-size:11px;font-weight:600;letter-spacing:.04em;color:var(--slate)}
+.stair-flag i{font-size:15px;color:var(--forest)}
 .stair-flag-start{left:0}
-.stair-flag-end{right:0;color:var(--forest)}
+.stair-flag-end{right:0}
 .stair{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(8,1fr);
-  align-items:end;gap:0}
+  align-items:end;gap:0 10px}
 .stair-step{position:relative;display:flex;flex-direction:column;justify-content:flex-end}
 /* cada degrau é mais alto que o anterior */
-.stair-step:nth-child(1) .stair-riser{height:60px}
-.stair-step:nth-child(2) .stair-riser{height:96px}
-.stair-step:nth-child(3) .stair-riser{height:132px}
-.stair-step:nth-child(4) .stair-riser{height:168px}
-.stair-step:nth-child(5) .stair-riser{height:204px}
-.stair-step:nth-child(6) .stair-riser{height:240px}
-.stair-step:nth-child(7) .stair-riser{height:276px}
-.stair-step:nth-child(8) .stair-riser{height:312px}
-.stair-riser{background:linear-gradient(180deg,var(--forest),var(--deep));
-  border-top:2px solid var(--ink);border-right:1px solid color-mix(in oklab,#000 22%,transparent);
-  transition:filter .3s var(--ease)}
-.stair-step:hover .stair-riser{filter:brightness(1.14)}
-.stair-cap{display:flex;flex-direction:column;align-items:center;gap:9px;padding:0 6px 14px;text-align:center}
-.stair-ico{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;
-  background:var(--ink);color:#fff}
-.stair-ico i{font-size:22px;line-height:1;display:block}
-.stair-cap strong{font-size:13.5px;font-weight:700;color:var(--ink);letter-spacing:-.01em;line-height:1.15}
+.stair-step:nth-child(1) .stair-riser{height:44px}
+.stair-step:nth-child(2) .stair-riser{height:70px}
+.stair-step:nth-child(3) .stair-riser{height:96px}
+.stair-step:nth-child(4) .stair-riser{height:122px}
+.stair-step:nth-child(5) .stair-riser{height:148px}
+.stair-step:nth-child(6) .stair-riser{height:174px}
+.stair-step:nth-child(7) .stair-riser{height:200px}
+.stair-step:nth-child(8) .stair-riser{height:226px}
+.stair-riser{position:relative;background:var(--mist);
+  border:1px solid var(--line);border-bottom:0;
+  border-radius:8px 8px 0 0;transition:background .3s var(--ease)}
+.stair-riser::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;
+  border-radius:8px 8px 0 0;background:var(--forest);opacity:.85;transition:opacity .3s var(--ease)}
+.stair-step:hover .stair-riser{background:color-mix(in oklab,var(--forest) 8%,var(--mist))}
+.stair-step:hover .stair-riser::before{opacity:1}
+.stair-cap{display:flex;flex-direction:column;align-items:center;gap:10px;padding:0 6px 16px;text-align:center}
+.stair-ico{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;
+  background:var(--paper);border:1px solid var(--line);color:var(--forest);
+  box-shadow:0 4px 14px color-mix(in oklab,var(--ink) 8%,transparent);transition:border-color .3s var(--ease),color .3s var(--ease)}
+.stair-step:hover .stair-ico{border-color:var(--forest);color:var(--deep)}
+.stair-ico i{font-size:21px;line-height:1;display:block}
+.stair-cap strong{font-size:13px;font-weight:600;color:var(--ink);letter-spacing:-.01em;line-height:1.15}
 /* animação de subida ao revelar */
 .reveal .stair-riser{transform-origin:bottom;animation:none}
 .stair-wrap.is-visible .stair-riser{animation:stairRise .6s var(--ease) both}
