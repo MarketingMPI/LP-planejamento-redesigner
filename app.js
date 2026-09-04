@@ -426,19 +426,21 @@ qsa('[data-carousel]').forEach(viewport => {
 
 /* ---------- Vídeo facade: troca a thumb pelo iframe do YouTube ao clicar ---------- */
 (function () {
-  const btn = document.querySelector('.app-video-btn');
-  if (!btn) return;
-  btn.addEventListener('click', () => {
-    const id = btn.getAttribute('data-yt');
-    if (!id) return;
-    const wrap = document.createElement('div');
-    wrap.className = 'app-video-embed';
-    const iframe = document.createElement('iframe');
-    iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`;
-    iframe.title = 'Vídeo do aplicativo Meu Plano';
-    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-    iframe.setAttribute('allowfullscreen', '');
-    wrap.appendChild(iframe);
-    btn.replaceWith(wrap);
-  }, { once: true });
+  const facades = document.querySelectorAll('.app-video-btn, .testi-video-btn');
+  facades.forEach((btn) => {
+    const embedClass = btn.classList.contains('testi-video-btn') ? 'testi-video-embed' : 'app-video-embed';
+    btn.addEventListener('click', () => {
+      const id = btn.getAttribute('data-yt');
+      if (!id) return;
+      const wrap = document.createElement('div');
+      wrap.className = embedClass;
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`;
+      iframe.title = 'Vídeo Meu Patrimônio';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.setAttribute('allowfullscreen', '');
+      wrap.appendChild(iframe);
+      btn.replaceWith(wrap);
+    }, { once: true });
+  });
 })();
