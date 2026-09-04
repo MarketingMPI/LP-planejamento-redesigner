@@ -1405,18 +1405,20 @@ p{margin:0}
 
 /* ---- Resultados: pilares + gráfico de barras (DVML x Planeja) ---- */
 .results{background:var(--paper);border-top:1px solid var(--line)}
-.results-chart{margin:0;background:var(--mist);border:1px solid var(--line);border-radius:var(--r-product);
-  padding:clamp(28px,3vw,40px)}
 .results-ico{flex:none;display:grid;place-items:center;width:56px;height:56px;border-radius:16px;
   background:var(--mist);border:1px solid var(--line);color:var(--forest);font-size:26px}
-.results-head{max-width:720px;margin-bottom:clamp(40px,5vw,60px)}
-.results-head h2{font-size:clamp(30px,3.8vw,52px);color:var(--ink);margin-top:14px;line-height:1.04}
-.results-head .lead{margin-top:18px}
-.results-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,56px);align-items:center}
-.results-pillars{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:22px}
+.results-head{margin-bottom:clamp(28px,3vw,40px)}
+.results-head h2{font-size:clamp(28px,3.4vw,46px);color:var(--ink);margin-top:14px;line-height:1.06}
+.results-head .lead{margin-top:16px}
+.results-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,56px);align-items:stretch}
+.results-left{display:flex;flex-direction:column;justify-content:center}
+.results-pillars{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:20px}
 .results-pillars li{display:flex;align-items:center;gap:18px}
 .results-pillars strong{display:block;font-size:18px;font-weight:700;color:var(--ink);letter-spacing:-.01em}
 .results-pillars div span{display:block;margin-top:3px;font-size:14px;color:var(--slate);line-height:1.5}
+.results-chart{margin:0;display:flex;flex-direction:column;justify-content:center;
+  background:var(--mist);border:1px solid var(--line);border-radius:var(--r-product);
+  padding:clamp(28px,3vw,44px)}
 .chart-bars{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px);align-items:end;
   height:clamp(240px,26vw,320px)}
 .chart-col{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:0}
