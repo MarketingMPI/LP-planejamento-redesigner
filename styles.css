@@ -480,10 +480,10 @@ p{margin:0}
   border-top:1px solid color-mix(in oklch,#fff 10%,transparent)}
 .footer-partners-label{font-size:10.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
   color:color-mix(in oklch,#fff 42%,transparent)}
-.footer-partners-list{display:inline-flex;flex-wrap:wrap;align-items:center;gap:12px 22px}
-.footer-partners-list span{font-size:14px;font-weight:700;letter-spacing:.02em;
-  color:color-mix(in oklch,#fff 58%,transparent);transition:color .25s var(--ease)}
-.footer-partners-list span:hover{color:color-mix(in oklch,#fff 88%,transparent)}
+.footer-partners-list{display:inline-flex;flex-wrap:wrap;align-items:center;gap:10px 12px}
+.footer-partners-list img{height:30px;width:auto;border-radius:7px;
+  opacity:.85;transition:opacity .25s var(--ease)}
+.footer-partners-list img:hover{opacity:1}
 .footer-bottom .legal{display:flex;gap:22px;flex-wrap:wrap}
 .footer-bottom a:hover{color:#fff}
 
